@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ferzin Travel Agency</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- BANNER -->
+<div class="banner">
+  <div class="container">
+    <h1>Ferzin Travel Agency ✈️</h1>
+    <h2>Explorez le monde avec nous</h2>
+    <a href="#contact" class="btn-blue">Préparer mon voyage</a>
+  </div>
+</div>
+
+<!-- DESTINATIONS -->
+<div class="container">
+  <h2>Nos destinations</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="images/paris.jpg">
+      <h3>Paris 🇫🇷</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/shanghai.jpg">
+      <h3>Shanghai 🇨🇳</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/rio.jpg">
+      <h3>Rio 🇧🇷</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/berlin.jpg">
+      <h3>Berlin 🇩🇪</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/newyork.jpg">
+      <h3>New York 🇺🇸</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/tokyo.jpg">
+      <h3>Tokyo 🇯🇵</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/dubai.jpg">
+      <h3>Dubai 🇦🇪</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/rome.jpg">
+      <h3>Rome 🇮🇹</h3>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="container" id="contact">
+  <h2>Préparer votre voyage</h2>
+
+  <div style="text-align:center;">
+    <button class="btn-blue" onclick="toggleForm()">Remplir le formulaire</button>
+  </div>
+
+  <form class="form hidden" id="travelForm">
+
+    <input type="text" placeholder="Nom complet" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Téléphone">
+
+    <select required>
+      <option value="">Destination souhaitée</option>
+      <option>Paris</option>
+      <option>Shanghai</option>
+      <option>Rio</option>
+      <option>Berlin</option>
+      <option>New York</option>
+      <option>Tokyo</option>
+      <option>Dubai</option>
+      <option>Rome</option>
+    </select>
+
+    <select>
+      <option value="">Budget</option>
+      <option>Moins de 500€</option>
+      <option>500€ - 1000€</option>
+      <option>1000€ - 3000€</option>
+      <option>+3000€</option>
+    </select>
+
+    <select>
+      <option value="">Durée du séjour</option>
+      <option>Weekend</option>
+      <option>1 semaine</option>
+      <option>2 semaines</option>
+      <option>1 mois</option>
+    </select>
+
+    <select>
+      <option value="">Type de voyage</option>
+      <option>Relaxation</option>
+      <option>Aventure</option>
+      <option>Luxe</option>
+      <option>Culture</option>
+    </select>
+
+    <textarea placeholder="Autres informations..."></textarea>
+
+    <button class="btn-blue">Envoyer</button>
+
+  </form>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <h3>Ferzin Travel Agency</h3>
+  <p>📧 contact@ferzintravel.com</p>
+  <p>📞 +33 6 12 34 56 78</p>
+
+  <p>
+    <a href="#">Instagram</a> |
+    <a href="#">Facebook</a> |
+    <a href="#">Twitter</a>
+  </p>
+
+  <p>© 2026 Ferzin Travel Agency</p>
+</div>
+
+<!-- SCRIPT -->
+<script>
+function toggleForm() {
+  const form = document.getElementById("travelForm");
+  form.classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
